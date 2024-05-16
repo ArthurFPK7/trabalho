@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE 16/05</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body class="text-center">
+    <div class="container">
+
+        <!-- CARD -->
+        <div class="card mt-10" style="width: 18rem;">
+            <img src="imagens/Apple_logo_black.svg.png" class="card-img-top" alt="...">
+            <div class="card-body mt-10">
+                <h5 class="card-title">APPLE</h5>
+                <p class="card-text">Apple é uma empresa multinacional norte-americana que tem o objetivo de projetar e
+                    comercializar produtos eletrônicos de consumo, software de computador
+                    e computadores pessoais. Os produtos de hardware mais conhecidos da empresa incluem a linha de
+                    computadores Macintosh, iPod, iPhone, iPad, Apple TV e o Apple Watch, coisa boa.</p>
+                <a href="https://www.apple.com/br/" class="btn btn-primary">Clique
+                    para saber mais.</a>
+            </div>
+        </div>
+
+
+        <!-- CAROUSEL -->
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <!--infra base do carousel-->
+
+                    <div id="exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                        <!--inserindo indicadores-->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#exemplo" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="macbook"></button>
+                            <button type="button" data-bs-target="#exemplo" data-bs-slide-to="1"
+                                aria-label="ipad"></button>
+                            <button type="button" data-bs-target="#exemplo" data-bs-slide-to="2"
+                                aria-label="iphone"></button>
+                        </div>
+                        <!-- adicionado na classe das divs /data-bs-interval/ -->
+                        <div class="carousel-inner" data-bs-interval="1000">
+                            <div class="carousel-item active">
+                                <div class="bg-info p-5">
+                                    <h1>MACBOOK</h1>
+                                    <img src="imagens/macbook.jfif" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="bg-warning p-5">
+                                    <h1>IPAD</h1>
+                                    <img src="imagens/ipad-pro.jfif" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="bg-success p-5" data-bs-interval="5000">
+                                    <h1>IPHONE</h1>
+                                    <img src="imagens/iphone15.jfif" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <!--controles-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#exemplo"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#exemplo"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minhaModal">
+                        Dispositivos
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="minhaModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Dispositivos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <ul>
+                                        <li>Macbook</li><br>
+                                        <li>iPad</li><br>
+                                        <li>iPhone</li><br>
+                                    </ul>
+                                </div>
+                                <div class="col d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- OFFCANVAS -->
+        <div class="text-center mt-5">
+            <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#meuOffcanvas"
+                aria-controls="offcanvasExample">DISPOSITIVOS</button>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="meuOffcanvas" aria-labelledby="meuOffcanvas">
+            <div class="p-3">
+                <ul>
+                    <li>Macbook</li><br>
+                    <li>iPad</li><br>
+                    <li>iPhone</li><br>
+                </ul>
+            </div>
+        </div><br><br><br><br>
+
+        <!--FORMULÁRIO-->
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Usuário</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Insira um email válido.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        
+
+        <!-- ACCORDION -->
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col">
+                    <!-- elemento pai -->
+                    <div class="accordion" id="accordionExemplo">
+                        <!-- item 1 do accordion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="macbook">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#area_1" aria-expanded="true" aria-controls="macbook">Macbook
+
+                                </button>
+                            </h2>
+                            <div id="area_1" class="accordion-collapse collapse" aria-labelledby="macbook"
+                                data-bs-parent="#accordionExemplo">
+                                <div class="accordion-body">
+                                    O MacBook é uma linha de computadores portáteis Macintosh da Apple Inc. lançada
+                                    originalmente em 16 de maio de 2006 e relançada em 9 de março de 2015.
+                                    A linha substituiu as marcas PowerBook e iBook durante a transição do Mac para os
+                                    processadores da Intel anunciada em 2005.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- item 2 -->
+                    <div class="accordion" id="accordionExemplo">
+                        <!-- item 2 do accordion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="iPad">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#area_2" aria-expanded="true" aria-controls="iPad">iPad
+
+                                </button>
+                            </h2>
+                            <div id="area_2" class="accordion-collapse collapse" aria-labelledby="iPad"
+                                data-bs-parent="#accordionExemplo">
+                                <div class="accordion-body">
+                                    iPad é uma linha de tablets projetada, desenvolvida e comercializada pela Apple, que
+                                    funciona com o sistema operacional móvel iOS e iPadOS.
+                                    O primeiro iPad foi lançado em 3 de abril de 2010; o modelo mais recente de iPad é o
+                                    iPad Air, lançado em 2020.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- item 3 -->
+                    <div class="accordion" id="accordionExemplo">
+                        <!-- item 3 do accordion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="iphone">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#area_3" aria-expanded="true" aria-controls="iphone">iPhone
+
+                                </button>
+                            </h2>
+                            <div id="area_3" class="accordion-collapse collapse" aria-labelledby="iphone"
+                                data-bs-parent="#accordionExemplo">
+                                <div class="accordion-body">
+                                    iPhone é uma linha de smartphones desenvolvidos e comercializados pela Apple Inc. É
+                                    o único smartphone a operar com o sistema operacional móvel iOS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3 IMAGENS RESPONSIVAS -->
+        <img src="imagens/macbook.jfif" class="img-fluid" alt="...">
+        <img src="imagens/ipad-pro.jfif" class="img-fluid" alt="...">
+        <img src="imagens/iphone15.jfif" class="img-fluid" alt="..."><br><br><br>
+
+        <!-- POPOVER -->
+        <button type="button" class="btn btn-secondary popover-dismiss" class="popover-dismiss" data-bs-toggle="popover"
+            data-bs-placement="right" data-bs-custom-class="custom-popover" data-bs-title="Apple" data-bs-content="Apple é uma empresa multinacional 
+    norte-americana que tem o objetivo de projetar e 
+    comercializar produtos eletrônicos de consumo, 
+        software de computador e computadores pessoais. ">
+            APPLE
+        </button><br><br><br>
+
+        <!-- DROPDOWN -->
+        <div class="container my-5">
+            <row class="mt-5">
+                <div class="col">
+                    <!-- 1 infra base para dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">DISPOSITIVOS
+
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Macbook</a></li>
+                            <li><a class="dropdown-item" href="#">iPad</a></li>
+                            <li><a class="dropdown-item" href="#">iPhone</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </row>
+        </div><br><br><br>
+
+        <!-- NAV OU NAVBAR -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="imagens/Apple_logo_black.svg.png" alt="Logo" width="30" height="auto"
+                        class="d-inline-block align-text-top ">
+                    APPLE
+                </a>
+            </div>
+        </nav>
+
+
+    </div>
+</body>
+<script>
+    const popover = new bootstrap.Popover('.popover-dismiss', {
+        trigger: 'focus'
+    })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+        </script>
+</html>
